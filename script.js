@@ -8,8 +8,8 @@ $(function() {
   /* Custom features */
   $('.query').click(queryChildren);
   $('#new-child').submit(addNewChild);
-  $(document.body).on('click', '.allow-in', modifyChild);
-  $(document.body).on('click', '.kick-out', modifyChild);
+  $(document.body).on('click', '.allow-in', toggleChildAllowed);
+  $(document.body).on('click', '.kick-out', toggleChildAllowed);
 });
 
 function showAllChildren() {
@@ -44,15 +44,16 @@ function addNewChild(event) {
   console.log($('#first_name').val());
 
   var childData = {
-    first_name: $('#first_name').val(),
-    last_name: $('#last_name').val(),
-    height_inches: $('#height_inches').val(),
-    weight_pounds: $('#weight_pounds').val(),
-    digging_skill: $('#digging_skill').val(),
-    packing_skill: $('#packing_skill').val(),
-    has_temper_issues: $('#has_temper_issues').val(),
-    favorite_color: $('#favorite_color').val(),
-    allowed: $('#allowed').val()
+    first: $('#first_name').val(),
+    last: $('#last_name').val(),
+    age: $('#age').val(),
+    height: $('#height_inches').val(),
+    weight: $('#weight_pounds').val(),
+    dig: $('#digging_skill').val(),
+    pack: $('#packing_skill').val(),
+    temper: $('#has_temper_issues').is(':checked').toString(),
+    color: $('#favorite_color').val(),
+    allowed: $('#allowed').is(':checked').toString()
   }
 
   console.log(childData);
@@ -60,7 +61,7 @@ function addNewChild(event) {
   $.post("insert.php", childData, function(data) { $('#children tbody').append(data) });
 }
 
-function modifyChild(event) {
+function toggleChildAllowed(event) {
   var id = event.target.id;
   var type = event.target.className;
 

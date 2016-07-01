@@ -1,8 +1,8 @@
 <?php
 
 $servername = "localhost";
-$username = "root";
-$password = "Bb240824!";
+$username = "sandboxdb2";
+$password = "sandboxpw";
 $dbName = "sandbox";
 
 // Create connection
@@ -28,6 +28,7 @@ if (!empty($qArray)) {
     $queryString .= " " . $column . "=" . $value;
   }
 }
+
 $result = mysqli_query($conn, $queryString);
 
 $kick_out = "'kick-out'>Kick Out";
