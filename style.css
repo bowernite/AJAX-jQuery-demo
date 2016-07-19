@@ -9,6 +9,10 @@ h2 {
   font-style: italic;
 }
 
+h3 {
+  text-decoration: underline;
+}
+
 table {
   border: 1px solid gold;
   width: 100%;
@@ -26,4 +30,69 @@ td {
 button {
   margin: 0 10px;
   display: inline-block;
+}
+
+.hidden { display: none; }
+
+.adder-view {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.all-children, .included {
+  width: 30%;
+  border: 3px solid red;
+  display: inline-table;
+  padding: 10px;
+}
+
+li {
+  height: 70px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.adder-btn {
+  width: 36px;
+  height: 32px;
+  text-align: center;
+  text-decoration: underline;
+  color: white;
+  font-size: 120%;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.adder-btn.all {
+  background-color: green;
+  float: right;
+}
+
+.adder-btn.true {
+  background-color: red;
+  float: left;
+  margin-right: 8px;
+}
+
+.message {
+  position: fixed;
+  top: 250px;
+  left: 50px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid #444;
+  width: 200px;
+}
+
+.message.error {
+  background-color: red;
+}
+
+.message.success {
+  background-color: green;
 }
