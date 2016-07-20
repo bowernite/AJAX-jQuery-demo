@@ -16,7 +16,6 @@ h2 {
 }
 
 h3 {
-  text-decoration: underline;
   text-align: center;
 }
 
@@ -49,10 +48,11 @@ button {
 
 .all-children, .included {
   width: 45%;
-  border: 3px solid #0b78dd;
+  border: 3px solid #eed87a;
   display: inline-table;
   padding: 10px;
   border-radius: 10px;
+  background-color: #fff7d9;
 }
 
 .included {
@@ -79,14 +79,14 @@ ul {
 
 .adder-btn {
   width: 36px;
-  height: 32px;
+  height: 31px;
   text-align: center;
-  text-decoration: underline;
   color: white;
   font-size: 120%;
-  padding-top: 5px;
+  padding-top: 6px;
   cursor: pointer;
   border-radius: 8px;
+  font-weight: bold;
 }
 
 .adder-btn.all {

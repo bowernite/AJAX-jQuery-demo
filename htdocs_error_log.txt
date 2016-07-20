@@ -668,3 +668,7 @@
 [Tue Jul 19 14:03:15.292389 2016] [:error] [pid 1828:tid 796] [client ::1:55966] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, boolean given in C:\\websites\\sandbox\\change-allowed.php on line 29, referer: http://sandbox.local/
 [Tue Jul 19 15:03:37.471565 2016] [:error] [pid 1828:tid 796] [client ::1:58119] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in C:\\websites\\sandbox\\query-adder.php on line 10, referer: http://sandbox.local/
 [Tue Jul 19 15:03:37.472566 2016] [:error] [pid 1828:tid 812] [client ::1:58123] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in C:\\websites\\sandbox\\query-adder.php on line 10, referer: http://sandbox.local/
+[Wed Jul 20 15:03:45.534731 2016] [:error] [pid 1828:tid 792] [client ::1:53013] PHP Notice:  Undefined index: allowed in C:\\websites\\sandbox\\insert.php on line 7, referer: http://sandbox.local/
+[Wed Jul 20 15:03:45.598735 2016] [:error] [pid 1828:tid 792] [client ::1:53013] PHP Notice:  Undefined index: allow in C:\\websites\\sandbox\\insert.php on line 25, referer: http://sandbox.local/
+[Wed Jul 20 15:05:24.272379 2016] [:error] [pid 1828:tid 792] [client ::1:53049] PHP Notice:  Undefined index: allowed in C:\\websites\\sandbox\\insert.php on line 7, referer: http://sandbox.local/
+[Wed Jul 20 15:05:24.323382 2016] [:error] [pid 1828:tid 792] [client ::1:53049] PHP Notice:  Undefined index: allow in C:\\websites\\sandbox\\insert.php on line 25, referer: http://sandbox.local/

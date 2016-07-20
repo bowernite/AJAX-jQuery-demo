@@ -91,6 +91,7 @@ function queryChildren() {
 
 function addNewChild(event) {
   event.preventDefault();
+  console.log($(this).serializeArray());
   $.post("insert.php", $(this).serializeArray(), function(data) { $('#children tbody').append(data) });
 }
 
