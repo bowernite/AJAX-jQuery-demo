@@ -21,7 +21,7 @@ $(function() {
     $.post("change-allowed.php", data, function(data) {
 
       // $('.message:hidden').delay(400);
-      $('.message:visible').clearQueue().fadeOut();
+      $('.message:visible').fadeOut();
 
       if (data == false) { // Failure
         $('.error').fadeIn(400).delay(1500).fadeOut(400);
