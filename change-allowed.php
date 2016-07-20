@@ -16,14 +16,10 @@ if ($action == "allow-in" && $child['allowed']) {
   mysqli_query($conn, $q);
   echo "remove";
 } else {
-  mysqli_query($conn, $q);
-  ?>
-  <li><?= $child['last_name'] . ", " . $child['first_name'] ?>
-    <div class="adder-btn true" id="<?= $id ?>">
-      <
-    </div>
+  mysqli_query($conn, $q); ?>
+  <li><span class="name"><?= $child['last_name'] . ", " . $child['first_name'] ?></span>
+    <div class="adder-btn true" id="<?= $id ?>"><</div>
   </li>
-<?
-}
+<? }
 
 mysqli_free_result($result); ?>

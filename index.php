@@ -25,7 +25,7 @@
   <div class="included">
     <h3>INCLUDED</h3>
       <ul class="initial"></ul>
-    <h3>NEWLY ADDED</h3>
+    <h3 id="new-add">NEWLY ADDED</h3>
       <ul class="new-adds"></ul>
   </div>
 

@@ -10,7 +10,7 @@ $query_str .= " ORDER BY last_name";
 $result = mysqli_query($conn, $query_str);
 
 while ($child = mysqli_fetch_array($result)) { ?>
-  <li><?= $child['last_name'] . ", " . $child['first_name'] ?>
+  <li><span class="name"><?= $child['last_name'] . ", " . $child['first_name'] ?></span>
     <div class="adder-btn <?= $q ?>" id="<?= $child['id'] ?>">
       <?= $q == 'true' ? "<" : ">" ?>
     </div>

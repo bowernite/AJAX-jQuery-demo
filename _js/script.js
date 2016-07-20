@@ -20,19 +20,22 @@ $(function() {
     var parent = $(this).parent();
     $.post("change-allowed.php", data, function(data) {
 
-      $('.message').fadeOut(400);
+      // $('.message:hidden').delay(400);
+      $('.message:visible').clearQueue().fadeOut();
 
       if (data == false) { // Failure
         $('.error').fadeIn(400).delay(1500).fadeOut(400);
         return;
-      } else if (data == "remove") {
+      } else if (data == "remove") { // Successful removal
         parent.remove();
-      } else { // Success
+      } else { // Successful insertion
         $('.new-adds').append(data);
       }
 
-      // $('.success:visible').clearQueue().fadeOut(400);
       $('.success').fadeIn(400).delay(1500).fadeOut(400);
+      $('.new-adds li').length > 0 ? $('h3#new-add').show() : $('h3#new-add').hide();
+
+      // $('.success:visible').clearQueue().fadeOut(400);
       // $('.error').fadeOut(400);
     });
 
